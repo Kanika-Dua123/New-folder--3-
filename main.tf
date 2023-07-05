@@ -22,11 +22,11 @@ resource "newrelic_one_dashboard" "Mynewdashboard" {
      page{
       name="mysecondpage"
     widget_bar {
-      title  = each.value.title
-      row    = each.value.row
-      column = each.value.column
-      width  = each.value.width
-      height = each.value.height
+      title  = each.value.title2
+      row    = each.value.row2
+      column = each.value.column2
+      width  = each.value.width2
+      height = each.value.height2
 
       nrql_query {
         account_id = each.value.account_id
