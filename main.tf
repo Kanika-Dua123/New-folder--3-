@@ -17,9 +17,10 @@ resource "newrelic_one_dashboard" "Mynewdashboard" {
         query = each.value.query
       }
     }
+  }
 
-
-
+     page{
+      name="mysecondpage"
     widget_bar {
       title  = each.value.title
       row    = each.value.row
@@ -29,7 +30,7 @@ resource "newrelic_one_dashboard" "Mynewdashboard" {
 
       nrql_query {
         account_id = each.value.account_id
-        query      = each.value.query
+        query     = each.value.query2
       }
     }
   }

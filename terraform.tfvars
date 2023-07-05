@@ -9,6 +9,7 @@ dash1 = {
     "width"      = 10
     "height"     = 20
     "query"  = "FROM Transaction SELECT average(duration) FACET appName"
+    "query2" = "FROM Transaction SELECT count(*)"
     "account_id" = 3930395
     # "filter_current_dashboard" = "true"
     # "color" = "#722727"
